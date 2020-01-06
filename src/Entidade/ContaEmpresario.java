@@ -24,4 +24,10 @@ public class ContaEmpresario extends Conta {
 			deposito(montante);
 		}
 	}
+	
+	@Override  		
+	public void saque(double montante) {	//Sobreposição de função
+		super.saque(montante);
+		saldo -= 2.0;
+	}
 }
