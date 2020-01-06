@@ -1,6 +1,6 @@
 package Entidade;
 
-public class ContaPoupanca extends Conta {
+public final class ContaPoupanca extends Conta { //"Final" evita que a classe seja herdada
 
 	private Double taxaDeJuros;
 
@@ -26,7 +26,7 @@ public class ContaPoupanca extends Conta {
 	}
 	
 	@Override  		
-	public void saque(double montante) {	//Sobreposição de função
+	public final void saque(double montante) {	//Sobreposição de função //Final evita que o metodo seja sobreposto
 		saldo -= montante;
 	}
 }
