@@ -8,12 +8,12 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta(1001, "Vinicius", 0.0);
-		ContaEmpresario contaEmp = new ContaEmpresario(1001, "Magnus", 0.0, 500.00);
+		//Conta conta = new Conta(1001, "Vinicius", 0.0);
+		//ContaEmpresario contaEmp = new ContaEmpresario(1001, "Magnus", 0.0, 500.00);
 		
 		//UPCASTING
 		
-		Conta conta1 = contaEmp;
+		//Conta conta1 = contaEmp;
 		Conta conta2 = new ContaEmpresario(1003, "Oliveira", 0.0, 600.00);
 		Conta conta3 = new ContaPoupanca(1004, "Lourenco", 0.0, 0.01);
 		
